@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main {
+    margin: 50px 50px;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.main h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 25px;
+}
+
+.img-cake {
+    width: 100%;
+}
+
+.img-dots {
+    cursor: pointer;
+}
+
+.description img {
+    width: 1.2rem;
+
+}
+
+.classic-description {
+    height: 0;
+    opacity: 0;
+}
+
+.c-d {
+    height: auto;
+    opacity: 1;
+    transition: 2s;
+}
+
+.description {
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    padding-bottom: 40px;
+}
+
+.options h4 {
+    font-style: italic;
+    color: rgb(95, 95, 95);
+}
+
+/* Times */
+
+.container-time {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.food-time {
+
+    margin-top: 20px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.desc-time-active span {
+    color: orange;
+
+}
+
+.fActive span {
+    color: orange;
+}
+
+.desc-time {
+    margin-left: 5px;
+}
+
+.fActive {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+
+/* Ingredients */
+
+.ingredients {
+    position: relative;
+}
+
+.ingredients h2 {
+    margin-top: 50px;
+}
+
+.options {
+    margin-top: 20px;
+}
+
+.option {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.5rem;
+}
+
+.cb {
+    margin-right: 8px;
+}
+
+/* Intructions */
+
+.instructions {
+    margin-top: 40px;
+}
+
+.instruction {
+    display: flex;
+    margin-top: 20px;
+    line-height: 1.5rem;
+}
+
+.instruction span {
+    background-color: rgb(242, 153, 74);
+    border-radius: 30%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.source {
+    margin: 80px auto;
+    text-align: center;
+    color: black;
+}
+
+.source a {
+    text-decoration: none;
+    color: black;
+}
+
+.source a:hover {
+    color: rgb(242, 153, 74);
+}
+
+
+
+/* Credits */
+.credit {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.credit a {
+    color: black;
+    text-decoration: none;
+}
+
+.credit a:hover {
+    color: rgb(242, 153, 74);
+}
+
+
+/* Medias */
+
+@media (min-width:1090px) {
+    .container-time {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        top: 0;
+        right: -490px;
+        border-radius: 5px;
+        padding: 40px 30px;
+        box-shadow: 2px 2px 8px 2px rgb(207, 207, 207);
+    }
+
+    .food-time .material-symbols-outlined {
+        font-size: 2rem;
+        margin-right: 6px;
+    }
+
+    .food-time {
+        margin: auto;
+    }
+
+    .ingredients {
+        width: 50%;
+    }
+
+    .instructions {
+        width: 50%;
+    }
+
+    .desc-time p {
+        font-size: .6rem;
+        font-weight: bold;
+        color: rgb(113, 113, 113);
+    }
+}
+
+@media (min-width: 1280px) {
+    .img-cake {
+        width: 100%;
+    }
+
+    .description {
+        width: 60%;
+    }
+
+    .main {
+        margin: 50px 150px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .container-time {
+        right: -350px;
+    }
+
+    .main {
+        margin: 50px 350px;
+    }
+}
+
+@media (min-width: 1700px) {
+
+    .container-time {
+        right: -500px;
+    }
+
+    .main {
+        margin: 50px 400px;
+    }
+}
